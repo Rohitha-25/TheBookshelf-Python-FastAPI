@@ -1,9 +1,10 @@
-from sqlalchemy import Column, Integer, String
-from app.database import base
+from sqlalchemy import Column, Integer, String, Float
+from app.database import Base
 
-class Book(base):
+class Book(Base):
     __tablename__ = "books"
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String(100), nullable=False)
     author = Column(String(100), nullable=False)
+    price = Column(Float, nullable=False)
