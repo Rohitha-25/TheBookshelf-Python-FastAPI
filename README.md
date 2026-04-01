@@ -23,6 +23,3 @@ TheBookshelf is a backend REST API built using FastAPI for managing books, autho
 - Schema validation
 - Dependency injection
 - Asynchronous request handling
-
-pip install -r requirements.txt
-uvicorn main:app --reload
